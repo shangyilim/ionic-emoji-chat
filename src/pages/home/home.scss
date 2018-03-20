@@ -1,0 +1,19 @@
+page-home {
+    .chat-container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .chat-list {
+        height: calc(100vh - 150px);
+    }
+    .speech-bubble {
+	background: #488aff;
+	border-radius: .4em;
+    padding:10px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+}

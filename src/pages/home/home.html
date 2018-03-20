@@ -1,0 +1,21 @@
+
+
+<ion-content #content padding>
+      <div *ngFor="let item of items | async">
+       <div class="speech-bubble">
+         {{ item.showOriginal ?   item.text :item.emoji }}
+       </div>
+       <div style="text-align:right;">
+          <a style="font-size:9pt;" tappable *ngIf="item.showOriginal == false" (click)="item.showOriginal = true">show original</a>
+       <a style="font-size:9pt;" tappable *ngIf="item.showOriginal == true" (click)="item.showOriginal = false">show emoji</a>
+       </div>
+      </div>
+</ion-content>
+<ion-footer>
+  <form (ngSubmit)="sendMessage(text)" style="display:flex;flex-direction:row;">
+      <ion-item>
+        <ion-input type="text" placeholder="Enter Message here...." [(ngModel)]="text" [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+      <button ion-button icon-only tappable type="submit"> <ion-icon name="send" ></ion-icon> </button>
+    </form>
+</ion-footer>
