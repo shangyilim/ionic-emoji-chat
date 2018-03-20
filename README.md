@@ -55,6 +55,10 @@ ionic serve
 
 3. In the `emojichat` folder, run the command below. This will deploy the app on Firebase Hosting, and Firebase Cloud function.
 ```
+npm run build -- --prod
+```
+Then run
+```
 firebase deploy
 ```
 
