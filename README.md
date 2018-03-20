@@ -51,7 +51,9 @@ ionic serve
 5. You will need to deploy the functions for the Emoji translation to work.
 
 ## Deploy
-In the `emojichat` folder, run the command below. This will deploy the app on Firebase Hosting, and Firebase Cloud function.
+1. Modify the `.firebaserc` file and replace it with your Firebase project id.
+
+3. In the `emojichat` folder, run the command below. This will deploy the app on Firebase Hosting, and Firebase Cloud function.
 ```
 firebase deploy
 ```
